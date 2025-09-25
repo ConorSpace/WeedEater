@@ -1,0 +1,23 @@
+[0.505s] Invoking command in '/home/conor/Developer/school/capstone/WeedEater/rosws/src/controller': PYTHONPATH=/home/conor/Developer/school/capstone/WeedEater/rosws/build/controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/conor/Developer/school/capstone/WeedEater/rosws/install/controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/controller build --build-base /home/conor/Developer/school/capstone/WeedEater/rosws/build/controller/build install --record /home/conor/Developer/school/capstone/WeedEater/rosws/build/controller/install.log --single-version-externally-managed install_data
+[0.650s] running egg_info
+[0.659s] writing ../../build/controller/controller.egg-info/PKG-INFO
+[0.659s] writing dependency_links to ../../build/controller/controller.egg-info/dependency_links.txt
+[0.659s] writing requirements to ../../build/controller/controller.egg-info/requires.txt
+[0.659s] writing top-level names to ../../build/controller/controller.egg-info/top_level.txt
+[0.677s] reading manifest file '../../build/controller/controller.egg-info/SOURCES.txt'
+[0.677s] writing manifest file '../../build/controller/controller.egg-info/SOURCES.txt'
+[0.677s] running build
+[0.678s] running build_py
+[0.678s] copying controller/camera.py -> /home/conor/Developer/school/capstone/WeedEater/rosws/build/controller/build/lib/controller
+[0.678s] copying controller/__init__.py -> /home/conor/Developer/school/capstone/WeedEater/rosws/build/controller/build/lib/controller
+[0.678s] running install
+[0.681s] running install_lib
+[0.690s] running install_data
+[0.690s] copying resource/controller -> /home/conor/Developer/school/capstone/WeedEater/rosws/install/controller/share/ament_index/resource_index/packages
+[0.690s] copying package.xml -> /home/conor/Developer/school/capstone/WeedEater/rosws/install/controller/share/controller
+[0.690s] running install_egg_info
+[0.700s] removing '/home/conor/Developer/school/capstone/WeedEater/rosws/install/controller/lib/python3.10/site-packages/controller-0.0.0-py3.10.egg-info' (and everything under it)
+[0.700s] Copying ../../build/controller/controller.egg-info to /home/conor/Developer/school/capstone/WeedEater/rosws/install/controller/lib/python3.10/site-packages/controller-0.0.0-py3.10.egg-info
+[0.700s] running install_scripts
+[0.787s] writing list of installed files to '/home/conor/Developer/school/capstone/WeedEater/rosws/build/controller/install.log'
+[0.803s] Invoked command in '/home/conor/Developer/school/capstone/WeedEater/rosws/src/controller' returned '0': PYTHONPATH=/home/conor/Developer/school/capstone/WeedEater/rosws/build/controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/conor/Developer/school/capstone/WeedEater/rosws/install/controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/controller build --build-base /home/conor/Developer/school/capstone/WeedEater/rosws/build/controller/build install --record /home/conor/Developer/school/capstone/WeedEater/rosws/build/controller/install.log --single-version-externally-managed install_data
