@@ -21,6 +21,7 @@ setup(
     entry_points={
         'console_scripts': [
             'camera = controller.camera:main',
+            'obj_det = controller.obj_det:main',
         ],
     },
 )
