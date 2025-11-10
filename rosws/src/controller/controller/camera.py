@@ -8,7 +8,8 @@ from cv_bridge import CvBridge
 class CameraPublisher(Node):
     def __init__(self):
         super().__init__('camera_publisher')
-        self.publisher_ = self.create_publisher(Image, 'camera', 10)
+        # Publish camera feed on the standard image_raw topic
+        self.publisher_ = self.create_publisher(Image, '/camera/image_raw', 10)
         self.timer = self.create_timer(0.03, self.timer_callback)  # ~30 FPS
         self.cap = cv2.VideoCapture(0)  # 0 = default laptop camera
         self.bridge = CvBridge()

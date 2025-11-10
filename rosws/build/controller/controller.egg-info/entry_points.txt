@@ -1,3 +1,5 @@
 [console_scripts]
 camera = controller.camera:main
+line_detector = controller.line_detector:main
 obj_det = controller.obj_det:main
+steering_pid = controller.steering_pid:main

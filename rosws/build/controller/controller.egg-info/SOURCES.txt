@@ -10,7 +10,9 @@ setup.py
 ../../build/controller/controller.egg-info/zip-safe
 controller/__init__.py
 controller/camera.py
+controller/line_detector.py
 controller/obj_det.py
+controller/steering_pid.py
 resource/controller
 test/test_copyright.py
 test/test_flake8.py
