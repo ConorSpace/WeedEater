@@ -24,6 +24,7 @@ setup(
             'obj_det = controller.obj_det:main',
             'line_detector = controller.line_detector:main',
             'steering_pid = controller.steering_pid:main',
+            'grid = controller.grid:main',
         ],
     },
 )
