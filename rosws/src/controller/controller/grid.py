@@ -38,6 +38,9 @@ max_a = 95
 min_b = 0
 max_b = 75
 
+#sending b angle
+lastvalue_sent = 0
+
 
 # --------------------- Mapping Functions ---------------------
 
@@ -144,8 +147,64 @@ class LaserOverlay(Node):
     def grid_2_angle(self, y_in):
         theta = math.atan(y_in / box_inches_height)
         return theta
-        
-        
+
+    # def y_pix_2_grid(self, y_pix):
+    #     # Ensure y stays in valid range
+    #     y_clamped = max(CROP_V_MIN, min(CROP_V_MAX, y_pix))
+
+    #     # Compute normalized position (0 = top, 1 = bottom)
+    #     frac = (y_clamped - CROP_V_MIN) / (CROP_V_MAX - CROP_V_MIN)
+
+
+    #     angle_table = [75, 65, 56, 48, 40, 32, 24, 16, 8, 0]
+
+    #     # Convert fraction → index
+    #     idx = int(frac * (len(angle_table) - 1))
+
+    #     return angle_table[idx]
+
+    def y_pix_to_B(self, y_pix):
+        # Ordered from high y (B=0) to low y (B=75)
+        table = [
+            (429, 0),
+            (410, 5),
+            (393, 10),
+            (374, 15),
+            (361, 20),
+            (346, 25),
+            (328, 30),
+            (308, 35),
+            (284, 40),
+            (261, 45),
+            (233, 50),
+            (205, 55),
+            (181, 60),
+            (156, 65),
+            (116, 70),
+            (69,  75)
+        ]
+
+        # Clamp to range
+        if y_pix >= table[0][0]:
+            return table[0][1]
+        if y_pix <= table[-1][0]:
+            return table[-1][1]
+
+        # Find the correct segment for interpolation
+        for i in range(len(table) - 1):
+            y1, B1 = table[i]
+            y2, B2 = table[i + 1]
+
+            # y1 > y_pix > y2 because y decreases as B increases
+            if y1 >= y_pix >= y2:
+                # Linear interpolation
+                t = (y_pix - y2) / (y1 - y2)
+                return B2 + t * (B1 - B2)
+
+        # fallback (should never hit)
+        return table[-1][1]
+
+            
 
     def mouse_callback(self, event, x_pix, y_pix, flags, param):
         max_angle_deg = 64.8
@@ -162,12 +221,14 @@ class LaserOverlay(Node):
         A = max(0, min(max_a, A))
 
 
-        y_norm = (y_pix - CROP_V_MIN) / CROP_H
-        y_norm = max(0.0, min(1.0, y_norm))
+        # y_norm = (y_pix - CROP_V_MIN) / CROP_H
+        # y_norm = max(0.0, min(1.0, y_norm))
 
-        # Reversed mapping for B
-        B = max_b - y_norm * (max_b - min_b)
-        B = max(min_b, min(max_b, B))
+        # # Reversed mapping for B
+        # B = max_b - y_norm * (max_b - min_b)
+        # B = max(min_b, min(max_b, B))
+
+        B = self.y_pix_to_B(y_pix)
 
         # 5. Print
         # 4. Print
