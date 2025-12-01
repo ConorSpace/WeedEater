@@ -14,6 +14,7 @@ controller/grid.py
 controller/laser_grid_gui.py
 controller/line_detector.py
 controller/obj_det.py
+controller/obj_det_modded.py
 controller/steering_pid.py
 resource/controller
 test/test_copyright.py

@@ -3,4 +3,5 @@ camera = controller.camera:main
 grid = controller.grid:main
 line_detector = controller.line_detector:main
 obj_det = controller.obj_det:main
+obj_det_modded = controller.obj_det_modded:main
 steering_pid = controller.steering_pid:main

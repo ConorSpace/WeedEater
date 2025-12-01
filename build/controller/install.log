@@ -1,5 +1,6 @@
 /home/pass_is_queens/Developer/WeedEater/install/controller/lib/python3.10/site-packages/controller/obj_det.py
 /home/pass_is_queens/Developer/WeedEater/install/controller/lib/python3.10/site-packages/controller/laser_grid_gui.py
+/home/pass_is_queens/Developer/WeedEater/install/controller/lib/python3.10/site-packages/controller/obj_det_modded.py
 /home/pass_is_queens/Developer/WeedEater/install/controller/lib/python3.10/site-packages/controller/__init__.py
 /home/pass_is_queens/Developer/WeedEater/install/controller/lib/python3.10/site-packages/controller/camera.py
 /home/pass_is_queens/Developer/WeedEater/install/controller/lib/python3.10/site-packages/controller/steering_pid.py
@@ -7,6 +8,7 @@
 /home/pass_is_queens/Developer/WeedEater/install/controller/lib/python3.10/site-packages/controller/grid.py
 /home/pass_is_queens/Developer/WeedEater/install/controller/lib/python3.10/site-packages/controller/__pycache__/obj_det.cpython-310.pyc
 /home/pass_is_queens/Developer/WeedEater/install/controller/lib/python3.10/site-packages/controller/__pycache__/laser_grid_gui.cpython-310.pyc
+/home/pass_is_queens/Developer/WeedEater/install/controller/lib/python3.10/site-packages/controller/__pycache__/obj_det_modded.cpython-310.pyc
 /home/pass_is_queens/Developer/WeedEater/install/controller/lib/python3.10/site-packages/controller/__pycache__/__init__.cpython-310.pyc
 /home/pass_is_queens/Developer/WeedEater/install/controller/lib/python3.10/site-packages/controller/__pycache__/camera.cpython-310.pyc
 /home/pass_is_queens/Developer/WeedEater/install/controller/lib/python3.10/site-packages/controller/__pycache__/steering_pid.cpython-310.pyc
@@ -25,4 +27,5 @@
 /home/pass_is_queens/Developer/WeedEater/install/controller/lib/controller/grid
 /home/pass_is_queens/Developer/WeedEater/install/controller/lib/controller/line_detector
 /home/pass_is_queens/Developer/WeedEater/install/controller/lib/controller/obj_det
+/home/pass_is_queens/Developer/WeedEater/install/controller/lib/controller/obj_det_modded
 /home/pass_is_queens/Developer/WeedEater/install/controller/lib/controller/steering_pid

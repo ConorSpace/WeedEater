@@ -6,6 +6,7 @@ from sensor_msgs.msg import Image
 from cv_bridge import CvBridge
 import math
 import numpy as np
+import serial
 
 # --------------------- Geometry & Limits ---------------------
 H = 0.25
@@ -94,6 +95,9 @@ class LaserOverlay(Node):
         self.subscription = self.create_subscription(
             Image, '/camera/image_raw', self.image_callback, 10
         )
+
+        self.ser = serial.Serial("/dev/ttyACM1", 9600, timeout=1)
+
 
         self.grid_pts = generate_grid(
             0.05,
@@ -220,14 +224,6 @@ class LaserOverlay(Node):
         A = max_a * (1 - (x_in / box_inches_x))
         A = max(0, min(max_a, A))
 
-
-        # y_norm = (y_pix - CROP_V_MIN) / CROP_H
-        # y_norm = max(0.0, min(1.0, y_norm))
-
-        # # Reversed mapping for B
-        # B = max_b - y_norm * (max_b - min_b)
-        # B = max(min_b, min(max_b, B))
-
         B = self.y_pix_to_B(y_pix)
 
         # 5. Print
@@ -235,6 +231,16 @@ class LaserOverlay(Node):
         self.get_logger().info(
             f"CLICK → inches: x={x_in:.2f}, y={y_in:.2f} → A={A:.1f}, B={B:.1f}"
         )
+
+        # ---------------- SEND SERIAL COMMAND ----------------
+        try:
+            cmd = f"A{int(A)} B{int(B)}\n"
+            self.ser.write(cmd.encode('utf-8'))
+            self.get_logger().info(f"Sent over serial: {cmd.strip()}")
+        except Exception as e:
+            self.get_logger().error(f"Serial send failed: {e}")
+        # ------------------------------------------------------
+
 
 
 
