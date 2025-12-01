@@ -9,6 +9,7 @@ setup.py
 ../../../build/controller/controller.egg-info/top_level.txt
 ../../../build/controller/controller.egg-info/zip-safe
 controller/__init__.py
+controller/bb_to_laser.py
 controller/camera.py
 controller/grid.py
 controller/laser_grid_gui.py

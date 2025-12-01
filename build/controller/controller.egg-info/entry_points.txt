@@ -1,4 +1,5 @@
 [console_scripts]
+bb_to_laser = controller.bb_to_laser:main
 camera = controller.camera:main
 grid = controller.grid:main
 line_detector = controller.line_detector:main

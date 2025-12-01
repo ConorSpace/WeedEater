@@ -26,6 +26,7 @@ setup(
             'steering_pid = controller.steering_pid:main',
             'grid = controller.grid:main',
             'obj_det_modded = controller.obj_det_modded:main',
+            'bb_to_laser = controller.bb_to_laser:main',
         ],
     },
 )

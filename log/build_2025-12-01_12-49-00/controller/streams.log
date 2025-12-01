@@ -1,0 +1,40 @@
+[1.810s] Invoking command in '/home/pass_is_queens/Developer/WeedEater/rosws/src/controller': PYTHONPATH=/home/pass_is_queens/Developer/WeedEater/build/controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/pass_is_queens/Developer/WeedEater/install/controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/controller build --build-base /home/pass_is_queens/Developer/WeedEater/build/controller/build install --record /home/pass_is_queens/Developer/WeedEater/build/controller/install.log --single-version-externally-managed install_data
+[2.385s] running egg_info
+[2.422s] writing ../../../build/controller/controller.egg-info/PKG-INFO
+[2.422s] writing dependency_links to ../../../build/controller/controller.egg-info/dependency_links.txt
+[2.423s] writing entry points to ../../../build/controller/controller.egg-info/entry_points.txt
+[2.423s] writing requirements to ../../../build/controller/controller.egg-info/requires.txt
+[2.423s] writing top-level names to ../../../build/controller/controller.egg-info/top_level.txt
+[2.497s] reading manifest file '../../../build/controller/controller.egg-info/SOURCES.txt'
+[2.499s] writing manifest file '../../../build/controller/controller.egg-info/SOURCES.txt'
+[2.499s] running build
+[2.499s] running build_py
+[2.500s] copying controller/obj_det.py -> /home/pass_is_queens/Developer/WeedEater/build/controller/build/lib/controller
+[2.500s] copying controller/laser_grid_gui.py -> /home/pass_is_queens/Developer/WeedEater/build/controller/build/lib/controller
+[2.501s] copying controller/obj_det_modded.py -> /home/pass_is_queens/Developer/WeedEater/build/controller/build/lib/controller
+[2.501s] copying controller/__init__.py -> /home/pass_is_queens/Developer/WeedEater/build/controller/build/lib/controller
+[2.501s] copying controller/camera.py -> /home/pass_is_queens/Developer/WeedEater/build/controller/build/lib/controller
+[2.502s] copying controller/steering_pid.py -> /home/pass_is_queens/Developer/WeedEater/build/controller/build/lib/controller
+[2.502s] copying controller/bb_to_laser.py -> /home/pass_is_queens/Developer/WeedEater/build/controller/build/lib/controller
+[2.503s] copying controller/line_detector.py -> /home/pass_is_queens/Developer/WeedEater/build/controller/build/lib/controller
+[2.503s] copying controller/grid.py -> /home/pass_is_queens/Developer/WeedEater/build/controller/build/lib/controller
+[2.504s] running install
+[2.516s] running install_lib
+[2.552s] copying /home/pass_is_queens/Developer/WeedEater/build/controller/build/lib/controller/bb_to_laser.py -> /home/pass_is_queens/Developer/WeedEater/install/controller/lib/python3.10/site-packages/controller
+[2.554s] byte-compiling /home/pass_is_queens/Developer/WeedEater/install/controller/lib/python3.10/site-packages/controller/bb_to_laser.py to bb_to_laser.cpython-310.pyc
+[2.557s] running install_data
+[2.558s] copying resource/controller -> /home/pass_is_queens/Developer/WeedEater/install/controller/share/ament_index/resource_index/packages
+[2.558s] copying package.xml -> /home/pass_is_queens/Developer/WeedEater/install/controller/share/controller
+[2.558s] running install_egg_info
+[2.598s] removing '/home/pass_is_queens/Developer/WeedEater/install/controller/lib/python3.10/site-packages/controller-0.0.0-py3.10.egg-info' (and everything under it)
+[2.598s] Copying ../../../build/controller/controller.egg-info to /home/pass_is_queens/Developer/WeedEater/install/controller/lib/python3.10/site-packages/controller-0.0.0-py3.10.egg-info
+[2.601s] running install_scripts
+[2.902s] Installing bb_to_laser script to /home/pass_is_queens/Developer/WeedEater/install/controller/lib/controller
+[2.903s] Installing camera script to /home/pass_is_queens/Developer/WeedEater/install/controller/lib/controller
+[2.903s] Installing grid script to /home/pass_is_queens/Developer/WeedEater/install/controller/lib/controller
+[2.903s] Installing line_detector script to /home/pass_is_queens/Developer/WeedEater/install/controller/lib/controller
+[2.904s] Installing obj_det script to /home/pass_is_queens/Developer/WeedEater/install/controller/lib/controller
+[2.904s] Installing obj_det_modded script to /home/pass_is_queens/Developer/WeedEater/install/controller/lib/controller
+[2.904s] Installing steering_pid script to /home/pass_is_queens/Developer/WeedEater/install/controller/lib/controller
+[2.906s] writing list of installed files to '/home/pass_is_queens/Developer/WeedEater/build/controller/install.log'
+[2.994s] Invoked command in '/home/pass_is_queens/Developer/WeedEater/rosws/src/controller' returned '0': PYTHONPATH=/home/pass_is_queens/Developer/WeedEater/build/controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/pass_is_queens/Developer/WeedEater/install/controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/controller build --build-base /home/pass_is_queens/Developer/WeedEater/build/controller/build install --record /home/pass_is_queens/Developer/WeedEater/build/controller/install.log --single-version-externally-managed install_data
